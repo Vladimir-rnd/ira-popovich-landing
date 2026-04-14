@@ -487,6 +487,10 @@
             border-left: 3px solid #3D6B4F;
         }
 
+        .edu-item[data-cert] {
+            cursor: pointer;
+        }
+
         .edu-item:hover {
             transform: translateY(-4px);
             box-shadow: 0 8px 25px rgba(0, 0, 0, 0.06);
@@ -1246,47 +1250,47 @@
         <div class="container">
             <h2 class="section-title fade-in">Образование</h2>
             <div class="edu-grid">
-                <div class="edu-item edu-diploma fade-in">
+                <div class="edu-item edu-diploma fade-in" data-cert="img/cert-diploma.jpg">
                     <div class="institution">МФУ &laquo;Синергия&raquo;</div>
                     <div class="program">Диплом о профессиональной переподготовке: &laquo;Нутрициология&raquo;, 256 часов</div>
                     <div class="year">2023</div>
                 </div>
-                <div class="edu-item fade-in">
+                <div class="edu-item fade-in" data-cert="img/cert-8.jpg">
                     <div class="institution">Д. Ермишина, интегративный врач-гастроэнтеролог</div>
                     <div class="program">Практика нутрициолога. Комплексная работа специалиста</div>
                     <div class="year">2024</div>
                 </div>
-                <div class="edu-item fade-in">
+                <div class="edu-item fade-in" data-cert="img/cert-7.jpg">
                     <div class="institution">Университет образовательной медицины (UOM)</div>
                     <div class="program">&laquo;Всемогущий кишечник&raquo;</div>
                     <div class="year">2024</div>
                 </div>
-                <div class="edu-item fade-in">
+                <div class="edu-item fade-in" data-cert="img/cert-6.jpg">
                     <div class="institution">Университет образовательной медицины (UOM)</div>
                     <div class="program">&laquo;Комплексная интегративная диагностика&raquo;</div>
                     <div class="year">2023</div>
                 </div>
-                <div class="edu-item fade-in">
+                <div class="edu-item fade-in" data-cert="img/cert-4.jpg">
                     <div class="institution">Университет образовательной медицины (UOM)</div>
                     <div class="program">&laquo;Детоксикация в домашних условиях&raquo;</div>
                     <div class="year">2023</div>
                 </div>
-                <div class="edu-item fade-in">
+                <div class="edu-item fade-in" data-cert="img/cert-5.jpg">
                     <div class="institution">Университет образовательной медицины (UOM)</div>
                     <div class="program">&laquo;Детский иммунитет&raquo;</div>
                     <div class="year">2023</div>
                 </div>
-                <div class="edu-item fade-in">
+                <div class="edu-item fade-in" data-cert="img/cert-2.jpg">
                     <div class="institution">PhytoScience, Академия натуропатической медицины</div>
                     <div class="program">Бизнес-интенсив для нутрициологов MEET UP</div>
                     <div class="year">2024</div>
                 </div>
-                <div class="edu-item fade-in">
+                <div class="edu-item fade-in" data-cert="img/cert-1.jpg">
                     <div class="institution">Школа здоровья Доктора Павлова</div>
                     <div class="program">PRO Женское здоровье</div>
                     <div class="year">&mdash;</div>
                 </div>
-                <div class="edu-item fade-in">
+                <div class="edu-item fade-in" data-cert="img/cert-3.jpg">
                     <div class="institution">Авторский проект PREVENT 2.0 (@Dr.Irina_Sit)</div>
                     <div class="program">&laquo;Анализы и Витамины&raquo;</div>
                     <div class="year">&mdash;</div>
@@ -1629,6 +1633,16 @@
         document.querySelectorAll('.cert-item').forEach(function(item) {
             item.addEventListener('click', function() {
                 var src = this.getAttribute('data-src');
+                lightboxImg.src = src;
+                lightbox.classList.add('active');
+                document.body.style.overflow = 'hidden';
+            });
+        });
+
+        // Education cards → open certificate in lightbox
+        document.querySelectorAll('.edu-item[data-cert]').forEach(function(item) {
+            item.addEventListener('click', function() {
+                var src = this.getAttribute('data-cert');
                 lightboxImg.src = src;
                 lightbox.classList.add('active');
                 document.body.style.overflow = 'hidden';
