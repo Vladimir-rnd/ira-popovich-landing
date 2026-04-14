@@ -3,18 +3,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Ирина Попович — дипломированный нутрициолог и детский нутрициолог. Коррекция питания, восполнение дефицитов, сопровождение здоровья.">
-    <meta name="keywords" content="нутрициолог, детский нутрициолог, коррекция питания, здоровье, Ирина Попович">
+    <meta name="description" content="Ирина Попович — нутрициолог и anti-age специалист для женщин 45+. Коррекция питания, восполнение дефицитов, сопровождение здоровья.">
+    <meta name="keywords" content="нутрициолог, anti-age, коррекция питания, здоровье, женщины 45+, Ирина Попович">
     <meta name="author" content="Ирина Попович">
     <meta property="og:title" content="Ирина Попович — Нутрициолог">
-    <meta property="og:description" content="Здоровье без лекарств и гормонов. Коррекция питания и образа жизни.">
+    <meta property="og:description" content="Нутрициолог для женщин 45+. Ваш организм больше не работает как раньше? Разберёмся.">
     <meta property="og:type" content="website">
     <meta property="og:locale" content="ru_RU">
     <title>Ирина Попович — Нутрициолог</title>
     <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🌿</text></svg>">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=Manrope:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=Manrope:wght@300;400;500;600;700&family=Nunito:wght@400;600;700&display=swap" rel="stylesheet">
     <style>
         /* ========== RESET & BASE ========== */
         *, *::before, *::after {
@@ -165,9 +165,9 @@
         }
 
         .logo {
-            font-family: 'Playfair Display', serif;
+            font-family: 'Nunito', sans-serif;
             font-size: 1.5rem;
-            font-weight: 600;
+            font-weight: 700;
             color: #2E2E2E;
             letter-spacing: 0.5px;
         }
@@ -273,8 +273,8 @@
 
         /* ========== HERO ========== */
         .hero {
-            padding-top: 120px;
-            padding-bottom: 80px;
+            padding-top: 100px;
+            padding-bottom: 60px;
             min-height: 100vh;
             display: flex;
             align-items: center;
@@ -313,17 +313,17 @@
             letter-spacing: 2px;
             text-transform: uppercase;
             color: #3D6B4F;
-            margin-bottom: 20px;
+            margin-bottom: 110px;
             position: relative;
             padding-left: 40px;
+            line-height: 2;
         }
 
         .hero-label::before {
             content: '';
             position: absolute;
             left: 0;
-            top: 50%;
-            transform: translateY(-50%);
+            top: 1.85em;
             width: 28px;
             height: 1px;
             background: #3D6B4F;
@@ -339,9 +339,13 @@
         .hero p {
             font-size: 1.1rem;
             color: #555;
-            margin-bottom: 36px;
+            margin-bottom: 12px;
             max-width: 500px;
             line-height: 1.8;
+        }
+
+        .hero p:last-of-type {
+            margin-bottom: 36px;
         }
 
         .hero-image {
@@ -354,20 +358,7 @@
             width: 100%;
             height: 560px;
             object-fit: cover;
-            box-shadow: 0 30px 60px rgba(0, 0, 0, 0.1);
-        }
-
-        .hero-image::before {
-            content: '';
-            position: absolute;
-            top: -20px;
-            right: -20px;
-            width: 100%;
-            height: 100%;
-            border: 2px solid #3D6B4F;
-            border-radius: 20px;
-            z-index: -1;
-            opacity: 0.3;
+            box-shadow: 0 20px 50px rgba(0, 0, 0, 0.08);
         }
 
         /* ========== ABOUT ========== */
@@ -406,7 +397,6 @@
         .about-text p:last-of-type {
             color: #3D6B4F;
             font-weight: 500;
-            font-style: italic;
             font-family: 'Playfair Display', serif;
             font-size: 1.05rem;
         }
@@ -418,8 +408,9 @@
 
         .problems-grid {
             display: grid;
-            grid-template-columns: repeat(3, 1fr);
+            grid-template-columns: 1.4fr 1fr;
             gap: 30px;
+            align-items: start;
         }
 
         .problem-card {
@@ -446,6 +437,35 @@
             color: #555;
             font-size: 0.95rem;
             line-height: 1.75;
+        }
+
+        .problem-card ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .problem-card ul li {
+            position: relative;
+            padding-left: 30px;
+            margin-bottom: 10px;
+            color: #555;
+            font-size: 0.95rem;
+            line-height: 1.65;
+        }
+
+        .problem-card ul li::before {
+            content: '✔';
+            position: absolute;
+            left: 0;
+            color: #3D6B4F;
+            font-weight: 700;
+        }
+
+        .problem-card .problem-quote {
+            margin-top: 20px;
+            color: #777;
+            font-size: 0.95rem;
+            line-height: 1.65;
         }
 
         /* ========== EDUCATION ========== */
@@ -482,7 +502,6 @@
         .edu-item .program {
             font-size: 0.88rem;
             color: #555;
-            font-style: italic;
             margin-bottom: 8px;
             line-height: 1.5;
         }
@@ -494,56 +513,46 @@
             letter-spacing: 0.5px;
         }
 
+
         /* ========== CERTIFICATES ========== */
         .certificates {
             background: #FFFAF4;
         }
 
-        .cert-scroll {
-            display: flex;
-            gap: 20px;
-            overflow-x: auto;
-            padding: 20px 0;
-            scroll-snap-type: x mandatory;
-            -webkit-overflow-scrolling: touch;
-            scrollbar-width: thin;
-            scrollbar-color: #3D6B4F #e0d5c8;
-        }
-
-        .cert-scroll::-webkit-scrollbar {
-            height: 6px;
-        }
-
-        .cert-scroll::-webkit-scrollbar-track {
-            background: #e0d5c8;
-            border-radius: 3px;
-        }
-
-        .cert-scroll::-webkit-scrollbar-thumb {
-            background: #3D6B4F;
-            border-radius: 3px;
+        .cert-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 24px;
         }
 
         .cert-item {
-            flex: 0 0 280px;
-            scroll-snap-align: start;
             border-radius: 12px;
             overflow: hidden;
             cursor: pointer;
             transition: transform 0.3s ease, box-shadow 0.3s ease;
             box-shadow: 0 4px 15px rgba(0, 0, 0, 0.06);
+            background: #fff;
         }
 
         .cert-item:hover {
-            transform: scale(1.04);
-            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+            transform: translateY(-4px);
+            box-shadow: 0 12px 30px rgba(0, 0, 0, 0.1);
         }
 
         .cert-item img {
             width: 100%;
-            height: 380px;
+            aspect-ratio: 4 / 3;
             object-fit: cover;
         }
+
+        .cert-item figcaption {
+            padding: 12px 14px;
+            font-size: 0.82rem;
+            color: #555;
+            line-height: 1.4;
+            text-align: center;
+        }
+
 
         /* ========== ALGORITHM ========== */
         .algorithm {
@@ -998,9 +1007,6 @@
                 margin: 0 auto;
             }
 
-            .hero-image::before {
-                display: none;
-            }
 
             .hero p {
                 margin-left: auto;
@@ -1025,7 +1031,12 @@
                 margin: 0 auto;
             }
 
-            .problems-grid,
+            .problems-grid {
+                grid-template-columns: 1fr;
+                max-width: 540px;
+                margin: 0 auto;
+            }
+
             .pricing-grid,
             .products-grid {
                 grid-template-columns: 1fr;
@@ -1089,12 +1100,9 @@
                 grid-template-columns: 1fr;
             }
 
-            .cert-item {
-                flex: 0 0 240px;
-            }
-
-            .cert-item img {
-                height: 320px;
+            .cert-grid {
+                grid-template-columns: repeat(2, 1fr);
+                gap: 16px;
             }
 
             .timeline {
@@ -1133,6 +1141,12 @@
                 flex-direction: column;
                 align-items: center;
             }
+
+            .cert-grid {
+                grid-template-columns: 1fr;
+                max-width: 320px;
+                margin: 0 auto;
+            }
         }
     </style>
 </head>
@@ -1170,9 +1184,10 @@
     <section class="hero" id="hero">
         <div class="container">
             <div class="hero-content fade-in">
-                <span class="hero-label">Нутрициолог &middot; Детский нутрициолог</span>
-                <h1>Здоровье без лекарств и гормонов</h1>
-                <p>Привожу подопечных к балансу внутреннему и внешнему с помощью коррекции питания и образа жизни</p>
+                <span class="hero-label">Нутрициолог<br>Anti-age специалист</span>
+                <h1>Ваш организм больше не&nbsp;работает как раньше?</h1>
+                <p>Если вам 45+ и вы всё чаще чувствуете:<br>«Я как будто разваливаюсь» — дело не в возрасте.</p>
+                <p><strong>Это сигнал, что система дала сбой.<br>И с этим можно разобраться.</strong></p>
                 <a href="#pricing" class="btn">Записаться на консультацию</a>
             </div>
             <div class="hero-image fade-in">
@@ -1189,10 +1204,11 @@
             </div>
             <div class="about-text fade-in">
                 <h2 class="section-title" style="text-align: left;">Давайте знакомиться!</h2>
-                <p>Я — дипломированный нутрициолог и детский нутрициолог, специалист по управлению здоровьем и благополучием, консультант по пищевому поведению.</p>
-                <p>Если вас беспокоит хроническая усталость, выпадение волос, ломкость ногтей, проблемы с кожей, снижение сексуальной активности, нарушение менструального цикла, невозможность снизить вес, то скорей всего вы давно не проверяли свой организм.</p>
-                <p>Я считаю, что сбалансированное питание и здоровый образ жизни — это самая лучшая инвестиция в себя. Ведь при помощи адекватного питания и модификации образа жизни можно управлять состоянием своего здоровья, стрессом, негативным влиянием окружающей среды.</p>
-                <p>В своей практике я придерживаюсь холистического подхода — рассматриваю организм как единое целое, а не совокупность отдельно функционирующих органов.</p>
+                <p>Меня зовут Ирина. Я нутрициолог для&nbsp;женщин&nbsp;45+.</p>
+                <p>Я работаю не с &laquo;правильным питанием&raquo; и&nbsp;не&nbsp;с&nbsp;запретами в&nbsp;духе &laquo;это&nbsp;можно&nbsp;&mdash;&nbsp;это&nbsp;нельзя&raquo;.</p>
+                <p><strong>Я работаю с другим:</strong> почему ваше тело перестало нормально функционировать.</p>
+                <p>Моя задача&nbsp;&mdash; не заглушить симптомы, а&nbsp;понять, где система дала сбой, и&nbsp;аккуратно собрать её заново&nbsp;&mdash; под&nbsp;ваш возраст, гормональный фон, образ жизни и&nbsp;состояние.</p>
+                <p>Потому что после 45 не работает универсальный подход.<br><strong>Работает только индивидуальная логика.</strong></p>
             </div>
         </div>
     </section>
@@ -1204,15 +1220,22 @@
             <div class="problems-grid">
                 <div class="problem-card fade-in">
                     <h3>Базовые запросы</h3>
-                    <p>Вам не хватает энергии, бодрости, качество жизни снизилось, повысилась утомляемость, сонливость, часто чувствуете усталость. Вы хотите выявить дефициты микро- и макро-элементов и восполнить их. Вы хотите понять уровень своего здоровья, пройти чек-ап здоровья под присмотром нутрициолога, получить расшифровку анализов. Вы подозреваете у себя анемию, гипотиреоз, инсулинорезистентность.</p>
-                </div>
-                <div class="problem-card fade-in">
-                    <h3>Anti-Age</h3>
-                    <p>Вам 45+ и вы хотите как можно дольше оставаться активным, жизнерадостным, быть в оптимуме. Не пропустить начало астении и дефицитов половых гормонов. Поддержать свой витаминно-минеральный баланс. Пройти чек-ап anti-age показателей.</p>
+                    <p>Ко мне приходят, когда:</p>
+                    <ul>
+                        <li>просыпаются уже без сил</li>
+                        <li>сон становится поверхностным, прерывистым или исчезает</li>
+                        <li>вес растёт, даже при &laquo;нормальном&raquo; питании</li>
+                        <li>появляется отёчность и ощущение тяжести в&nbsp;теле</li>
+                        <li>возникает тревожность, раздражительность, перепады настроения</li>
+                        <li>пищеварение работает нестабильно</li>
+                        <li>еда перестаёт давать энергию</li>
+                    </ul>
+                    <p class="problem-quote">И очень часто звучит одно и&nbsp;то&nbsp;же:<br><strong>&laquo;Я не понимаю, что со мной происходит&raquo;</strong></p>
                 </div>
                 <div class="problem-card fade-in">
                     <h3>Биохакинг</h3>
-                    <p>Вы совершенно здоровы и хотите оставаться таким и дальше. Или же у вас есть амбициозные цели по здоровью. Все запросы оговариваются отдельно.</p>
+                    <p>Вы совершенно здоровы и&nbsp;хотите оставаться таким и&nbsp;дальше. Или&nbsp;же у&nbsp;вас есть амбициозные цели по&nbsp;здоровью.</p>
+                    <p>Все запросы оговариваются отдельно.</p>
                 </div>
             </div>
         </div>
@@ -1223,79 +1246,49 @@
         <div class="container">
             <h2 class="section-title fade-in">Образование</h2>
             <div class="edu-grid">
-                <div class="edu-item fade-in">
+                <div class="edu-item edu-diploma fade-in">
                     <div class="institution">МФУ &laquo;Синергия&raquo;</div>
-                    <div class="program">Диплом: &laquo;Нутрициология&raquo;, 256 часов</div>
+                    <div class="program">Диплом о профессиональной переподготовке: &laquo;Нутрициология&raquo;, 256 часов</div>
                     <div class="year">2023</div>
                 </div>
                 <div class="edu-item fade-in">
-                    <div class="institution">Московский институт психоанализа</div>
-                    <div class="program">Нутрициолог, консультант по коррекции веса и пищевому поведению</div>
-                    <div class="year">2023 &ndash; 2025</div>
-                </div>
-                <div class="edu-item fade-in">
-                    <div class="institution">European University of Longevity</div>
-                    <div class="program">School of Laboratory Diagnostics in Functional Medicine</div>
-                    <div class="year">2023</div>
-                </div>
-                <div class="edu-item fade-in">
-                    <div class="institution">Stanford University</div>
-                    <div class="program">Child Nutrition and Cooking</div>
-                    <div class="year">2021</div>
-                </div>
-                <div class="edu-item fade-in">
-                    <div class="institution">Stanford University</div>
-                    <div class="program">Introduction to Food and Health</div>
-                    <div class="year">2019</div>
-                </div>
-                <div class="edu-item fade-in">
-                    <div class="institution">Ludwig-Maximilians-Universit&auml;t M&uuml;nchen</div>
-                    <div class="program">Nutrition and Lifestyle in Pregnancy</div>
-                    <div class="year">2020</div>
-                </div>
-                <div class="edu-item fade-in">
-                    <div class="institution">University of Colorado</div>
-                    <div class="program">Science of Exercise</div>
-                    <div class="year">2019</div>
-                </div>
-                <div class="edu-item fade-in">
-                    <div class="institution">МИИН</div>
-                    <div class="program">Детская интегративная нутрициология</div>
-                    <div class="year">2022</div>
-                </div>
-                <div class="edu-item fade-in">
-                    <div class="institution">АСИЗ</div>
-                    <div class="program">Эксперт по гормональной регуляции метаболизма</div>
-                    <div class="year">2022</div>
-                </div>
-                <div class="edu-item fade-in">
-                    <div class="institution">EDPRO</div>
-                    <div class="program">Интегративная нутрициология и метаболическое восстановление</div>
-                    <div class="year">2022</div>
-                </div>
-                <div class="edu-item fade-in">
-                    <div class="institution">АСИЗ</div>
-                    <div class="program">Специалист по управлению здоровьем и благополучием</div>
-                    <div class="year">2021</div>
-                </div>
-                <div class="edu-item fade-in">
-                    <div class="institution">Университет образовательной медицины</div>
-                    <div class="program">Всемогущий кишечник / Детоксикация / Детский иммунитет / Интегративная диагностика</div>
-                    <div class="year">2023 &ndash; 2024</div>
-                </div>
-                <div class="edu-item fade-in">
-                    <div class="institution">Д. Ермишина</div>
+                    <div class="institution">Д. Ермишина, интегративный врач-гастроэнтеролог</div>
                     <div class="program">Практика нутрициолога. Комплексная работа специалиста</div>
                     <div class="year">2024</div>
                 </div>
                 <div class="edu-item fade-in">
-                    <div class="institution">Академия молодости и красоты</div>
-                    <div class="program">Детокс-практик</div>
+                    <div class="institution">Университет образовательной медицины (UOM)</div>
+                    <div class="program">&laquo;Всемогущий кишечник&raquo;</div>
                     <div class="year">2024</div>
                 </div>
                 <div class="edu-item fade-in">
-                    <div class="institution">Учебный Центр Профессионалов Фитнеса</div>
-                    <div class="program">Спортивный диетолог нутрициолог</div>
+                    <div class="institution">Университет образовательной медицины (UOM)</div>
+                    <div class="program">&laquo;Комплексная интегративная диагностика&raquo;</div>
+                    <div class="year">2023</div>
+                </div>
+                <div class="edu-item fade-in">
+                    <div class="institution">Университет образовательной медицины (UOM)</div>
+                    <div class="program">&laquo;Детоксикация в домашних условиях&raquo;</div>
+                    <div class="year">2023</div>
+                </div>
+                <div class="edu-item fade-in">
+                    <div class="institution">Университет образовательной медицины (UOM)</div>
+                    <div class="program">&laquo;Детский иммунитет&raquo;</div>
+                    <div class="year">2023</div>
+                </div>
+                <div class="edu-item fade-in">
+                    <div class="institution">PhytoScience, Академия натуропатической медицины</div>
+                    <div class="program">Бизнес-интенсив для нутрициологов MEET UP</div>
+                    <div class="year">2024</div>
+                </div>
+                <div class="edu-item fade-in">
+                    <div class="institution">Школа здоровья Доктора Павлова</div>
+                    <div class="program">PRO Женское здоровье</div>
+                    <div class="year">&mdash;</div>
+                </div>
+                <div class="edu-item fade-in">
+                    <div class="institution">Авторский проект PREVENT 2.0 (@Dr.Irina_Sit)</div>
+                    <div class="program">&laquo;Анализы и Витамины&raquo;</div>
                     <div class="year">&mdash;</div>
                 </div>
             </div>
@@ -1305,16 +1298,44 @@
     <!-- ===== CERTIFICATES ===== -->
     <section class="certificates section" id="certificates">
         <div class="container">
-            <h2 class="section-title fade-in">Сертификаты</h2>
-            <div class="cert-scroll fade-in">
-                <div class="cert-item" data-src="img/cert-1.jpg"><img src="img/cert-1.jpg" alt="Сертификат 1" loading="lazy"></div>
-                <div class="cert-item" data-src="img/cert-2.jpg"><img src="img/cert-2.jpg" alt="Сертификат 2" loading="lazy"></div>
-                <div class="cert-item" data-src="img/cert-3.jpg"><img src="img/cert-3.jpg" alt="Сертификат 3" loading="lazy"></div>
-                <div class="cert-item" data-src="img/cert-4.jpg"><img src="img/cert-4.jpg" alt="Сертификат 4" loading="lazy"></div>
-                <div class="cert-item" data-src="img/cert-5.jpg"><img src="img/cert-5.jpg" alt="Сертификат 5" loading="lazy"></div>
-                <div class="cert-item" data-src="img/cert-6.jpg"><img src="img/cert-6.jpg" alt="Сертификат 6" loading="lazy"></div>
-                <div class="cert-item" data-src="img/cert-7.jpg"><img src="img/cert-7.jpg" alt="Сертификат 7" loading="lazy"></div>
-                <div class="cert-item" data-src="img/cert-8.jpg"><img src="img/cert-8.jpg" alt="Сертификат 8" loading="lazy"></div>
+            <h2 class="section-title fade-in">Дипломы и сертификаты</h2>
+            <div class="cert-grid fade-in">
+                <figure class="cert-item" data-src="img/cert-diploma.jpg">
+                    <img src="img/cert-diploma.jpg" alt="Диплом МФУ Синергия — Нутрициология" loading="lazy">
+                    <figcaption>Диплом &laquo;Нутрициология&raquo;, МФУ&nbsp;&laquo;Синергия&raquo;, 2023</figcaption>
+                </figure>
+                <figure class="cert-item" data-src="img/cert-8.jpg">
+                    <img src="img/cert-8.jpg" alt="Практика нутрициолога — Д. Ермишина" loading="lazy">
+                    <figcaption>Практика нутрициолога, Д.&nbsp;Ермишина, 2024</figcaption>
+                </figure>
+                <figure class="cert-item" data-src="img/cert-7.jpg">
+                    <img src="img/cert-7.jpg" alt="Всемогущий кишечник — UOM" loading="lazy">
+                    <figcaption>&laquo;Всемогущий кишечник&raquo;, UOM, 2024</figcaption>
+                </figure>
+                <figure class="cert-item" data-src="img/cert-6.jpg">
+                    <img src="img/cert-6.jpg" alt="Комплексная интегративная диагностика — UOM" loading="lazy">
+                    <figcaption>&laquo;Интегративная диагностика&raquo;, UOM, 2023</figcaption>
+                </figure>
+                <figure class="cert-item" data-src="img/cert-4.jpg">
+                    <img src="img/cert-4.jpg" alt="Детоксикация в домашних условиях — UOM" loading="lazy">
+                    <figcaption>&laquo;Детоксикация&raquo;, UOM, 2023</figcaption>
+                </figure>
+                <figure class="cert-item" data-src="img/cert-5.jpg">
+                    <img src="img/cert-5.jpg" alt="Детский иммунитет — UOM" loading="lazy">
+                    <figcaption>&laquo;Детский иммунитет&raquo;, UOM, 2023</figcaption>
+                </figure>
+                <figure class="cert-item" data-src="img/cert-2.jpg">
+                    <img src="img/cert-2.jpg" alt="Бизнес-интенсив — PhytoScience" loading="lazy">
+                    <figcaption>MEET UP, PhytoScience, 2024</figcaption>
+                </figure>
+                <figure class="cert-item" data-src="img/cert-1.jpg">
+                    <img src="img/cert-1.jpg" alt="PRO Женское здоровье — Школа Доктора Павлова" loading="lazy">
+                    <figcaption>PRO Женское здоровье, Школа Доктора Павлова</figcaption>
+                </figure>
+                <figure class="cert-item" data-src="img/cert-3.jpg">
+                    <img src="img/cert-3.jpg" alt="Анализы и Витамины — PREVENT 2.0" loading="lazy">
+                    <figcaption>&laquo;Анализы и Витамины&raquo;, PREVENT 2.0</figcaption>
+                </figure>
             </div>
         </div>
     </section>
